@@ -8,13 +8,6 @@
  * Controller of the yoApp
  */
 angular.module('yoApp')
-<<<<<<< HEAD
-  .controller('serve', function () {
+  .controller('team', function () {
    
   });
-=======
-    .controller('serve', function () {
-
-    });
-
->>>>>>> origin/master
