@@ -1,3 +1,13 @@
+'use strict';
+
 /**
- * Created by Administrator on 2016/9/8.
+ * @ngdoc function
+ * @name yoApp.controller:MainCtrl
+ * @description
+ * # MainCtrl
+ * Controller of the yoApp
  */
+angular.module('yoApp')
+  .controller('serve', function () {
+   
+  });
