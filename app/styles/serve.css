@@ -1,0 +1,19 @@
+body,ul,p,h1,h2,h3,span{margin: 0;padding: 0;font-family: "Î¢ÈíÑÅºÚ";}
+.l-banner{width: 100%;height:447px;}
+.l-banner img{width: 100%;height: 447px;}
+.l-content{width: 100%;height: 240px;margin-top: 100px;}
+.l-main{width: 1030px;height: 240px; margin: auto;text-align: center;}
+.l-main h1,.l-content3-left h1{font-size: 30px;font-weight: bold;}
+.l-main span,.l-content3-left span{font-size: 14px;color: #666666;line-height: 30px;margin-bottom: 20px;}
+.l-main p{font-size: 14px;line-height: 30px;color:#666;margin-top: 50px;}
+.l-main b{display: block;width: 30px;height: 6px;background: #d7375b;margin: auto;}
+.l-content2{width: 995px;height: 659px;margin:auto;}
+.l-content2 img{width: 995px;height: 659px;}
+.l-content3{width: 1200px;height: 436px;margin:222px auto}
+.l-content3>div{float: left;width: 600px;}
+.l-content3-left{height: 436px;text-align: left;}
+.l-content3-left b{display: block;width: 30px;height: 6px;background: #d7375b;float: left;}
+.l-content3-left p{font-size: 14px;line-height: 30px;color:#666;margin-top: 50px;}
+.l-content3-right{height: 299px;margin-top: 120px;}
+.l-content4{width: 1200px;height: 436px;margin:260px auto;}
+.l-content4>div{float: left;width: 600px;}
