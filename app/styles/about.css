@@ -1,0 +1,35 @@
+body,ul,p,h1,h2,h3,span{margin: 0;padding: 0;font-family: "Î¢ÈíÑÅºÚ";}
+.l-about-banner{width: 100%;height: 448px;}
+.l-about-banner img{width: 100%;height: 448px;}
+.l-about-content{width: 1160px;height: 405px;margin: auto;text-align: center;}
+.l-about-content img{margin: auto;}
+.l-about-main{width: 1160px;height: 405px;margin-top: 125px;}
+.l-about-main span{font-size: 14px;margin-top: 30px;color: #606060;}
+.l-about-main h1,.l-about-content3 h1{font-size: 30px;line-height: 40px;font-weight: bold;}
+.l-about-main b{display: block;;width: 28px;height: 4px;background: #d7375b;margin: 25px auto;}
+.l-about-main p,.l-about-content3 p{font-size: 14px;line-height: 30px;color:#333;margin-top: 25px;}
+.l-about-content2{width: 552px;height: 306px;margin: auto;}
+.l-about-content3{width:1180px;height: 280px;margin: auto;text-align: left;margin-top: 125px;}
+.l-about-content3 b{display: block;;width: 45px;height: 4px;background: #d7375b;float: left;margin-top: 25px;}
+.l-about-content3 span{font-size: 14px;color: #606060;}
+.l-about-content4{width: 1180px;margin: auto;height: 201px;}
+.l-about-content4 img{float: left;}
+.l-about-content4 img:nth-child(2){margin-left: 25px;}
+.l-about-content5{width: 100%;height: 650px;margin-top: 160px;z-index: 1;
+    background: url("../images/l-about-foot.png");background-size: 100% 100%;background-repeat: no-repeat;}
+.l-content5-left{width: 40%;height:650px;background:#333;opacity:0.6;z-index: 123;float: left;text-align: left;}
+.l-content5-right{width: 60%;height:650px;background:#000;opacity:0.6;z-index: 123;float: left;}
+.l-content5-left h1{color: #fff;margin: 90px 0 0 60px;font-size: 30px;}
+.l-content5-left span{font-size: 18px;color: #999;line-height: 20px;margin-left: 60px; margin-top: 5px;}
+.l-content5-left p{margin: 100px 0 0 60px;line-height: 35px;color: #999;font-size: 15px;}
+.l-content5-right s{color:red;margin-left: 5px;line-height: 35px;}
+.l-content5-right span:nth-child(1){font-size: 12px;color: #999;margin: 90px 0 0 120px;line-height: 30px;}
+.l-content5-right span{margin-left: 120px;font-size: 12px;color: #999;line-height: 30px;}
+.l-content5-right input{width: 435px;height: 35px;line-height:35px;margin-left: 120px;border-radius: 10px;}
+.l-content5-right textarea{border-radius: 10px;margin-left: 120px;}
+.l-content5-right button{display: block;width: 150px;height: 45px;background: #f54f4f;border-radius: 5px;
+    text-align: center;line-height: 45px;color: #fff;margin-left: 120px;border: 0;margin-top: 35px;}
+
+
+
+
