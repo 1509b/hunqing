@@ -7,27 +7,26 @@ a:hover{text-decoration:none;}
 
 .team_banner{ width: 100%; height: 300px; background: url(../images/team_banner.jpg); background-size: cover;}
 .c_main{ width: 1100px; height: 275px; margin: 0 auto; margin-top: 60px; text-align: center;}
-.c_main h1{  color: #ff6537; height: 78px; line-height: 78px;}
+.c_main h1{  color: #ff6537; height: 78px; line-height: 78px; font-weight: bold;}
 .c_main h3{ font-size: 12px; color: black; height: 29px; line-height: 29px;}
 .c_main p{ font-size: 10px; color: #999; line-height: 27px; margin-top: 8px;}
 .c_main1{ width: 100%; height: 412px;}
 .c_main1_left{ width: 436px; height: 412px; float: left; margin-left: 8%;}
 .c_main1_left h3{ font-size: 12px; height: 16px; line-height: 16px; color: #606060;}
-.c_main1_left h1{ font-size: 28px; color: #000; height: 43px; line-height: 43px;}
+.c_main1_left h1{ font-size: 28px; color: #000; height: 43px; line-height: 43px; font-weight: bold;}
 .team_fk{ height: 74px;}
 .team_fk img{ margin-top: 35px;}
 .c_main1_left p{ font-size: 12px; line-height: 30px; color: #333;}
 .c_main1_right{ width: 622px; height: 412px; float: left; margin-left: 5%;}
-.c_main2{ width: 85%; height: 620px; margin: 0 auto;}
-.c_main2 h1{ font-size: 24px; color: black; height: 31px; line-height: 31px;}
+.c_main2{ width: 85%; height: 420px; margin: 0 auto;}
+.c_main2 h1{ font-size: 24px; color: black; height: 31px; line-height: 31px; font-weight: bold;}
 .c_main2 h3{ font-size: 12px; height: 20px; line-height: 20px;}
 .team_fk2{ height: 70px;}
 .team_fk2 img{ margin-top: 33px;}
 .c_main2 p{ font-size: 12px; color: black; line-height: 28px; letter-spacing: 1px;}
-.c_main2 p:nth-child(2){ margin-top: 100px;}
-
-
-
+.c_main3{ width: 900px; height: 247px; margin-left: 8%; margin-bottom: 120px;}
+.c_main3 img{ float: left;}
+.c_main3 img:nth-child(2){ margin-left: 30px;}
 
 
 
