@@ -1,0 +1,37 @@
+body{margin:0;padding:0;font-family:"微软雅黑"}
+*{margin:0px;padding:0px}
+ol,ul,li,p,img,h1,h2,h3,h4,h5,h6,font{display:block;}
+ol,ul,li{list-style:none;}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+
+.team_banner{ width: 100%; height: 300px; background: url(../images/team_banner.jpg); background-size: cover;}
+.c_main{ width: 1100px; height: 275px; margin: 0 auto; margin-top: 60px; text-align: center;}
+.c_main h1{  color: #ff6537; height: 78px; line-height: 78px;}
+.c_main h3{ font-size: 12px; color: black; height: 29px; line-height: 29px;}
+.c_main p{ font-size: 10px; color: #999; line-height: 27px; margin-top: 8px;}
+.c_main1{ width: 100%; height: 412px;}
+.c_main1_left{ width: 436px; height: 412px; float: left; margin-left: 8%;}
+.c_main1_left h3{ font-size: 12px; height: 16px; line-height: 16px; color: #606060;}
+.c_main1_left h1{ font-size: 28px; color: #000; height: 43px; line-height: 43px;}
+.team_fk{ height: 74px;}
+.team_fk img{ margin-top: 35px;}
+.c_main1_left p{ font-size: 12px; line-height: 30px; color: #333;}
+.c_main1_right{ width: 622px; height: 412px; float: left; margin-left: 5%;}
+.c_main2{ width: 85%; height: 620px; margin: 0 auto;}
+.c_main2 h1{ font-size: 24px; color: black;}
+.c_main2 h3{ font-size: 12px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
