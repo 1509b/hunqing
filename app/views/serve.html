@@ -28,7 +28,9 @@
         </p>
     </div>
     <div class="l-content3-right">
-        <img src="../images/l-video.png">
+        <video controls="controls" width="600" height="300" id="mv" poster="../images/l-video.png">
+            <source src="../video/wedding.mp4"/>
+        </video>
     </div>
 </div>
 
@@ -49,3 +51,15 @@
         <img src="../images/l-v2.png">
     </div>
 </div>
+<script>
+    var bn=document.getElementById('btn');
+    bn.onclick=function(){
+        if(mv.paused){
+            mv.play();
+            bn.value="暂停";
+        }else{
+            mv.pause();
+            bn.value="播放";
+        }
+    }
+</script>
