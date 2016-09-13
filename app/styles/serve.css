@@ -1,5 +1,5 @@
 body,ul,p,h1,h2,h3,span{margin: 0;padding: 0;font-family: "Î¢ÈíÑÅºÚ";}
-.l-banner{width: 100%;height:447px;}
+.l-banner{width: 100%;height:447px;cursor: pointer;}
 .l-banner img{width: 100%;height: 447px;}
 .l-content{width: 100%;height: 240px;margin-top: 100px;}
 .l-main{width: 1030px;height: 240px; margin: auto;text-align: center;}
@@ -7,13 +7,29 @@ body,ul,p,h1,h2,h3,span{margin: 0;padding: 0;font-family: "Î¢ÈíÑÅºÚ";}
 .l-main span,.l-content3-left span{font-size: 14px;color: #666666;line-height: 30px;margin-bottom: 20px;}
 .l-main p{font-size: 14px;line-height: 30px;color:#666;margin-top: 50px;}
 .l-main b{display: block;width: 30px;height: 6px;background: #d7375b;margin: auto;}
-.l-content2{width: 995px;height: 659px;margin:auto;}
-.l-content2 img{width: 995px;height: 659px;}
+.l-content2{width: 860px;height: 509px;margin:auto;background: url("../images/l-banner2.png");
+  position:relative;z-index: 1;}
+/*.l-content2 img{width: 995px;height: 659px;}*/
+.l-content2 span{display:block;position: absolute;width: 860px;height: 509px;cursor: pointer;
+  background:rgba(0,0,0,0.1); z-index:2;transition:all 1s;background-repeat:no-repeat;}
+.l-content2 span:hover{
+  -webkit-transform:rotateY(90deg);
+  -moz-transform:rotateY(90deg);
+  -o-transform:rotateY(90deg);
+  -ms-transform:rotateY(90deg);}
 .l-content3{width: 1200px;height: 436px;margin:222px auto}
 .l-content3>div{float: left;width: 600px;}
 .l-content3-left{height: 436px;text-align: left;}
 .l-content3-left b{display: block;width: 30px;height: 6px;background: #d7375b;float: left;}
 .l-content3-left p{font-size: 14px;line-height: 30px;color:#666;margin-top: 50px;}
-.l-content3-right{height: 299px;margin-top: 120px;}
+.l-content3-right{height: 299px;margin-top: 120px;background: url("../images/l-v2.png");
+  position: relative;z-index: 1;background-repeat: no-repeat;}
+.l-content3-right span{display: block;width:596px;height:299px;position:absolute;
+  cursor: pointer;z-index: 2;background:rgba(0,0,0,0.1);transition:all 1s;}
+.l-content3-right span:hover{
+  -webkit-transform:rotateY(90deg);
+  -moz-transform:rotateY(90deg);
+  -o-transform:rotateY(90deg);
+  -ms-transform:rotateY(90deg);}
 .l-content4{width: 1200px;height: 436px;margin:260px auto;}
 .l-content4>div{float: left;width: 600px;}
