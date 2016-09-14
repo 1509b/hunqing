@@ -12,7 +12,7 @@ body,ul,p,h1,h2,h3,span{margin: 0;padding: 0;font-family: "Î¢ÈíÑÅºÚ";}
     background: url("../images/l-about-banner2.png");position: relative;}
 .l-about-content2 span{display: block;width: 552px;height: 306px;background:rgba(0,0,0,0.1); z-index:2;
     transition:all 1s;position: absolute;}
-.l-about-content2 span:hover{
+.l-about-content2 span.hover{
     -webkit-transform:rotateY(90deg);
     -moz-transform:rotateY(90deg);
     -o-transform:rotateY(90deg);
@@ -26,7 +26,7 @@ body,ul,p,h1,h2,h3,span{margin: 0;padding: 0;font-family: "Î¢ÈíÑÅºÚ";}
     position: absolute;z-index: 1;cursor: pointer;}
 .span1{display:block;width: 432px;height: 201px;background: url("../images/l-about-left.png");
     z-index:2;position: relative;float: left;}
-.span1 a:hover{
+.span1 a.hover{
     -webkit-transform:rotateY(90deg);
     -moz-transform:rotateY(90deg);
     -o-transform:rotateY(90deg);
@@ -37,7 +37,7 @@ body,ul,p,h1,h2,h3,span{margin: 0;padding: 0;font-family: "Î¢ÈíÑÅºÚ";}
 .span2{display:block;width: 359px;height: 202px;background: url("../images/l-about-right.png");
     z-index:2;position: relative;float: left;margin-left: 25px;
   cursor: pointer;}
-.span2 a:hover{
+.span2 a.hover{
     -webkit-transform:rotateX(90deg);
     -moz-transform:rotateX(90deg);
     -o-transform:rotateX(90deg);
