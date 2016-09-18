@@ -32,5 +32,7 @@ angular.module('yoApp')
    				$(".song-div6-con3").show().siblings().hide()
    			})
    		})
+   		
+   		
   });
 
