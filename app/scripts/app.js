@@ -37,9 +37,11 @@ angular
 	  		controller:"team"
 	  	})
 	  	
-	  	$('.nav').find('ul>li').click(function(){
+	  	$('.nav,.fix').find('ul>li').click(function(){
 	  		$(this).addClass("hover").siblings().removeClass("hover")
+			$(this).parent().parent().siblings().children().children().eq($(this).index()).addClass("hover").siblings().removeClass("hover")
 	  	})
+	  	
 	  	
 	  	$('.nav-1').hover(function(){
 	  		$(this).find('ol').stop().fadeIn()
@@ -47,4 +49,26 @@ angular
 	  		$(this).find('ol').stop().fadeOut()
 	  	})
 	  	
+	  	
+	  	$(window).scroll(function(){
+			var headerH=$('.logo').height();
+			if($(document).scrollTop()>headerH){
+				$('.fix').slideDown();
+			}else{
+				$('.fix').slideUp();
+			}
+		});
+		
+		$(window).scroll(function(){
+			if($(document).scrollTop()>$(window).height()){
+				$('.back').slideDown();
+			}else{
+				$('.back').slideUp();
+			}
+		});
+		
+		$('.back').click(function(){
+			$('body,html').animate({'scrollTop':0},500);
+		});
+		  	
     });
