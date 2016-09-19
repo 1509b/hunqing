@@ -95,6 +95,7 @@ a{
 .song-div13-left img{width:282px;height:188px;}
 .song-div13-con img{width:588px;height:349px;}
 .song-div13-right img{width:282px;height:188px;}
+<<<<<<< HEAD
 .null13{width:100%;height:80px;}
 .song-lie1{width:1190px;height:201px;margin:0 auto;}
 .song-lie1-1{width:570px;height:200px;border-bottom:1px solid #B9B9B9;float: left;}
@@ -103,3 +104,18 @@ a{
 .song-lie1-1-date p{font-family: "仿宋";font-size:45px;line-height:50px;color:#666666;}
 
 .tab_bg{ background: #ff6637; color: #fff;}
+=======
+.null13{width:100%;height:100px;}
+.song-lie{width:100%;height:150px;}
+.song-lie-1{width:600;height:150px;float:left;margin-left: 100px;border-bottom:1px solid #e6e5e5;}
+.song-lie-2{width:600;height:150px;float:left;margin-left:220px;border-bottom:1px solid #e6e5e5;}
+.song-lie-1-year{width:100%;height:15px;}
+.song-lie-1-year p{font-family: "微软雅黑";font-size:12px;color:#999999;line-height:15px;}
+.song-lie-1-time{width:100%;height:40px;}
+.song-lie-1-time p{font-family: "微软雅黑";font-size:25px;color:#4a4a4a;line-height:30px;}
+.song-lie-1-title{width:100%;height:30px;}
+.song-lie-1-title a{font-family: "微软雅黑";font-size:16px;color:#868585;line-height:30px;}
+.song-lie-1-xiang{width:100%;height:30px;}
+.song-lie-1-xiang p{font-family: "微软雅黑";font-size:12px;color:#999999;}
+.null15{width:100%;height:50px;}
+>>>>>>> origin/master
