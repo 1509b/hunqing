@@ -65,24 +65,24 @@
 <div class="null5"></div>
 <div class="song-div5">
 			<div class="song-div5-con">
-					<div class="song-div5-con-1" style="background:#ff6637;">
-						<p class="song-div5-con-1-p1" style="color:white;">定制婚礼</p>
+					<div class="song-div5-con-1" ng-class="{'tab_bg':i=$index}" ng-click="addback($index)">
+						<p class="song-div5-con-1-p1" ng-click="swi('j1')">定制婚礼</p>
 					</div>
 					<div class="song-div5-con-2">
-						<p class="song-div5-con-2-p2">户外婚礼</p>
+						<p class="song-div5-con-2-p2" ng-click="swi('j2')" ng-class="abc">户外婚礼</p>
 					</div>
 					<div class="song-div5-con-3">
-						<p class="song-div5-con-3-p3">海外婚礼</p>
+						<p class="song-div5-con-3-p3" ng-click="swi('j3')" ng-class="abc">海外婚礼</p>
 					</div>
 			</div>
 </div>
 <div class="null8"></div>
 
 				<!--李雪松   选项卡部分-->
-<div class="song-div6">
+<div class="song-div6" ng-switch="tab">
 	
 										<!--	第一张选项卡-->
-	<div class="song-div6-con1">
+	<div class="song-div6-con1"  ng-switch-default>
 		<div class="song-div6-yi">
 				<div class="song-div6-yi-1">
 						<div class="song-div6-img">
@@ -138,7 +138,7 @@
 	</div>
 	
 												<!--第二张选项卡-->
-	<div class="song-div6-con2" style="display: none;">
+	<div class="song-div6-con2" ng-switch-when="j2">
 		<div class="song-div6-yi">
 				<div class="song-div6-yi-1">
 						<div class="song-div6-img">
@@ -194,7 +194,7 @@
 	</div>
 	
 											<!--第三张选项卡-->
-	<div class="song-div6-con3" style="display: none;">
+	<div class="song-div6-con3" ng-switch-when="j3">
 		<div class="song-div6-yi">
 				<div class="song-div6-yi-1">
 						<div class="song-div6-img">
@@ -248,6 +248,9 @@
 				</div>
 		</div>
 	</div>
+	
+   
+	
 </div>
 <div class="null9"></div>
 <div class="song-div7">
