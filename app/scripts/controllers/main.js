@@ -34,6 +34,7 @@ angular.module('yoApp')
    			})
    		})
    		
+<<<<<<< HEAD
 		$http({
 			url:"http://123.56.227.177:2504/wedding-autoplay",
 			method:"get",
@@ -102,6 +103,8 @@ angular.module('yoApp')
 
 	
 
+=======
+>>>>>>> origin/master
    		
   });
 
