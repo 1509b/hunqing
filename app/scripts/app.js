@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-    .module('yoApp', ['ui.router']).config(function($stateProvider,$urlRouterProvider){
+    .module('yoApp', ['ui.router','ngSanitize']).config(function($stateProvider,$urlRouterProvider){
     	$urlRouterProvider.when("","/main")
   	    $stateProvider.state("main",{
 	  		url:"/main",

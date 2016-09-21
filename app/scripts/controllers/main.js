@@ -8,8 +8,7 @@
  * Controller of the yoApp
  */
 angular.module('yoApp')
-<<<<<<< HEAD
-  .controller('main', function ($scope) {
+  .controller('main', function ($scope,$http) {
 		$scope.swi=function(e){
 			$scope.tab=e;
 		}
@@ -17,35 +16,48 @@ angular.module('yoApp')
 			$scope.i=e
 		}
 		
+		
+		$http({
+			url:"http://123.56.227.177:2504/wedding-news",
+			method:"get",
+			withCredentials:true  //withCredentials:true 把后台返的cookie再传给后台  
+		}).success(function(e){
+			$scope.data=e
+			console.log(e)
+		})
+		
+		
 
-
-=======
-  .controller('main', function () {
    		$(function(){
-   			$(".song-div5-con-1").mouseover(function(){
+   			$(".song-div5-con-1").click(function(){
    				$(".song-div5-con-1").css("background","#ff6637").siblings().css("background","white")
    				$(".song-div5-con-1-p1").css("color","white")
    				$(".song-div5-con-2-p2").css("color","#999797")
    				$(".song-div5-con-3-p3").css("color","#999797")
-   				$(".song-div6-con1").show().siblings().hide()
    			})
-   			$(".song-div5-con-2").mouseover(function(){
+   			$(".song-div5-con-2").click(function(){
    				$(".song-div5-con-2").css("background","#ff6637").siblings().css("background","white")
    				$(".song-div5-con-2-p2").css("color","white")
    					$(".song-div5-con-1-p1").css("color","#999797")
    				$(".song-div5-con-3-p3").css("color","#999797")
-   				$(".song-div6-con2").show().siblings().hide()
    			})
-   			$(".song-div5-con-3").mouseover(function(){
+   			$(".song-div5-con-3").click(function(){
    				$(".song-div5-con-3").css("background","#ff6637").siblings().css("background","white")
    				$(".song-div5-con-3-p3").css("color","white")
    					$(".song-div5-con-1-p1").css("color","#999797")
    				$(".song-div5-con-2-p2").css("color","#999797")
-   				$(".song-div6-con3").show().siblings().hide()
    			})
    		})
    		
    		
->>>>>>> origin/master
-  });
+
+  }).filter("hq",function(){
+  	return function(e){
+  		if(e.length>280){
+  			return e.substr(0,280)+'...'
+  		}else{
+  			return e
+  		}
+  	}
+  })
 

@@ -65,14 +65,14 @@
 <div class="null5"></div>
 <div class="song-div5">
 			<div class="song-div5-con">
-					<div class="song-div5-con-1" ng-class="{'tab_bg':i=$index}" ng-click="addback($index)">
+					<div class="song-div5-con-1" style="color: white; background: #ff6637;">
 						<p class="song-div5-con-1-p1" ng-click="swi('j1')">定制婚礼</p>
 					</div>
 					<div class="song-div5-con-2">
-						<p class="song-div5-con-2-p2" ng-click="swi('j2')" ng-class="abc">户外婚礼</p>
+						<p class="song-div5-con-2-p2" ng-click="swi('j2')">户外婚礼</p>
 					</div>
 					<div class="song-div5-con-3">
-						<p class="song-div5-con-3-p3" ng-click="swi('j3')" ng-class="abc">海外婚礼</p>
+						<p class="song-div5-con-3-p3" ng-click="swi('j3')">海外婚礼</p>
 					</div>
 			</div>
 </div>
@@ -290,105 +290,17 @@
 <div class="null13"></div>
 
 										<!--李雪松    新闻列表部分	-->	
-<div class="song-lie">
-		<div class="song-lie-1">
-			<div class="song-lie-1-time">
-				<p>09/18</p>
-			</div>
-			<div class="song-lie-1-year">
-				<p>2016</p>
-			</div>
-			<div class="song-lie-1-title">
-				<a href="">星月神话:邀您共同见证童话诞生</a>
-			</div>
-			<div class="song-lie-1-xiang">
-				<p>拥有全明星的技术团队，前沿摄影技术和时尚的妆容表现。因为它是旅游城市，拥有</p>
-				<p>独特的自然风光，因此...</p>
-			</div>
-		</div>
-		<div class="song-lie-2">
-			<div class="song-lie-1-time">
-				<p>09/17</p>
-			</div>
-			<div class="song-lie-1-year">
-				<p>2016</p>
-			</div>
-			<div class="song-lie-1-title">
-				<a href="">三亚婚纱摄影哪家强</a>
-			</div>
-			<div class="song-lie-1-xiang">
-				<p>说到去三亚拍摄婚纱照，大家第一反应就是高端大气价格昂贵。这并不是完全没有道</p>
-				<p>理的，因为它是全国旅游城市，拥有独特的...</p>
-			</div>
-		</div>
-</div>
-<div class="null8"></div>
 
-<div class="song-lie">
-		<div class="song-lie-1">
-			<div class="song-lie-1-time">
-				<p>09/12</p>
-			</div>
-			<div class="song-lie-1-year">
-				<p>2016</p>
-			</div>
-			<div class="song-lie-1-title">
-				<a href="">婚博会优惠力度大   性价比更高</a>
-			</div>
-			<div class="song-lie-1-xiang">
-				<p>婚纱摄影要从很多方面去考虑，但是在三亚这么多婚纱摄影里要挑选出最适合自己的</p>
-				<p>才是较好的。基本上是...</p>
-			</div>
-		</div>
-		<div class="song-lie-2">
-			<div class="song-lie-1-time">
-				<p>09/07</p>
-			</div>
-			<div class="song-lie-1-year">
-				<p>2016</p>
-			</div>
-			<div class="song-lie-1-title">
-				<a href="">婚庆5折优惠仅此一周</a>
-			</div>
-			<div class="song-lie-1-xiang">
-				<p>拥有高端的旅拍和比较合适的性价比。但是在三亚这么多婚纱摄影里找到最适合自己</p>
-				<p>的，是每一个女孩的...</p>
-			</div>
-		</div>
+<div class="big_news">
+	<ul ng-repeat="i in data">
+		<li>
+			<span class="date">{{i.date}}</span>
+			<h1><a href="#">{{i.title}}</a></h1>
+			<p ng-bind-html="i.content | hq"></p>
+		</li>
+	</ul>
 </div>
 
-<div class="null8"></div>
 
-<div class="song-lie">
-		<div class="song-lie-1" style="border-bottom: 1px solid white;">
-			<div class="song-lie-1-time">
-				<p>09/04</p>
-			</div>
-			<div class="song-lie-1-year">
-				<p>2016</p>
-			</div>
-			<div class="song-lie-1-title">
-				<a href="">珠三角地区最专业的婚庆策划公司</a>
-			</div>
-			<div class="song-lie-1-xiang">
-				<p>不同人的喜好和想要的风格是不一样的，所以各式各样的服装都是要有的，那去三亚</p>
-				<p>拍摄婚纱照要挑选...</p>
-			</div>
-		</div>
-		<div class="song-lie-2" style="border-bottom: 1px solid white;">
-			<div class="song-lie-1-time">
-				<p>08/21</p>
-			</div>
-			<div class="song-lie-1-year">
-				<p>2016</p>
-			</div>
-			<div class="song-lie-1-title">
-				<a href="">LOVE IN EVERY BREATH 仲夏欢乐颂</a>
-			</div>
-			<div class="song-lie-1-xiang">
-				<p>选择三亚婚纱摄影的时候一定要慎重，多对比几家，选择最好的。因为三亚是全国旅</p>
-				<p>游城市，因此受到很多...</p>
-			</div>
-		</div>
-</div>
+
 <div class="null15"></div>
