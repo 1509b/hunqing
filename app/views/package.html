@@ -2,34 +2,65 @@
 <div class="m_banner">
 	<img src="../images/m-banner.png">
 </div>
-<div class="m_content1">
-	<div class="m_content1_l">
-		<span>三亚/6999套餐</span>
-		<span>超高性价比，完美行程</span>
-		<span>免费入住2天1晚三亚精品酒店</span>
-		<span></span>
+<div >
+	<div ng-repeat="i in data">
+		<div class="m_content1" ng-if="1==$index">
+			<div class="m_content1_l">
+				<span>{{i.add}}/{{i.price}}套餐</span>
+				<span>{{i.title}}</span>
+				<span>{{i.summary}}</span>
+				<span></span>
+			</div>
+			<div class="m_content1_r">
+				<span ng-bind-html="i.content"></span>
+				<!--<span>
+					王子和公主的邂逅不是巧合而是命定,每个女孩都是他的公主.六月,花事正浓,寻寻觅觅,历览林间花红柳绿,穿梭寻常的街道巷尾刹那间,熟悉的路口,一家专为新人提供全方位婚礼策划服务，由80、90后婚礼策划、时尚、广告各界领域精英组成，创立于2008年，是专注于婚礼创意策划、量身定做、礼仪服务的专业婚庆。幸福文化，为你我传递幸福，实现每对新人的婚礼梦想，全球领先的一站式婚礼服务专家,中国婚博会指定战略合作伙伴。
+				</span>
+				<span>
+					广告各界领域精英组成，创立于2008年，是专注于婚礼创意策划、量身定做、礼仪服务的专业婚庆。幸福文化，为你我传递幸福，实现每对新人的婚礼梦想，全球领先的一站式婚礼服务专家,中国婚博会指定战略合作伙伴。
+				</span>-->
+			</div>
+		</div>
 	</div>
-	<div class="m_content1_r">
-		<span>
-			王子和公主的邂逅不是巧合而是命定,每个女孩都是他的公主.六月,花事正浓,寻寻觅觅,历览林间花红柳绿,穿梭寻常的街道巷尾刹那间,熟悉的路口,一家专为新人提供全方位婚礼策划服务，由80、90后婚礼策划、时尚、广告各界领域精英组成，创立于2008年，是专注于婚礼创意策划、量身定做、礼仪服务的专业婚庆。幸福文化，为你我传递幸福，实现每对新人的婚礼梦想，全球领先的一站式婚礼服务专家,中国婚博会指定战略合作伙伴。
-		</span>
-		<span>
-			广告各界领域精英组成，创立于2008年，是专注于婚礼创意策划、量身定做、礼仪服务的专业婚庆。幸福文化，为你我传递幸福，实现每对新人的婚礼梦想，全球领先的一站式婚礼服务专家,中国婚博会指定战略合作伙伴。
-		</span>
+	<div ng-repeat="i in data">
+		<div class="m_content1" ng-if="0==$index">
+			<div class="m_content1_l">
+				<span>{{i.add}}/{{i.price}}套餐</span>
+				<span>{{i.title}}</span>
+				<span>{{i.summary}}</span>
+				<span></span>
+			</div>
+			<div class="m_content1_r">
+				<span ng-bind-html="i.content"></span>
+			</div>
+		</div>
+	</div>
+	<div class="m_content2">
+		<div class="m_content2_img1" id="mcl">
+			<img src="../images/m_img1.png">
+			<img src="../images/m_img2.png">
+			<img src="../images/m_img3.png">
+		</div>
+		<div class="m_content2_img2">
+			<img src="../images/m_img4.png">
+			<img src="../images/m_img5.png">
+		</div>	
+	</div>
+	<div ng-repeat="i in data">
+		<div class="m_content1" ng-if="2==$index">
+			<div class="m_content1_l">
+				<span>{{i.add}}/{{i.price}}套餐</span>
+				<span>{{i.title}}</span>
+				<span>{{i.summary}}</span>
+				<span></span>
+			</div>
+			<div class="m_content1_r">
+				<span ng-bind-html="i.content"></span>
+			</div>
+		</div>
 	</div>
 </div>
-<div class="m_content2">
-	<div class="m_content2_img1">
-		<img src="../images/m_img1.png">
-		<img src="../images/m_img2.png">
-		<img src="../images/m_img3.png">
-	</div>
-	<div class="m_content2_img2">
-		<img src="../images/m_img4.png">
-		<img src="../images/m_img5.png">
-	</div>	
-</div>
-<div class="m_content1">
+<!--<div class="m_content1">
 	<div class="m_content1_l">
 		<span>海南岛/6999套餐</span>
 		<span>幸福文化，为你我传递幸福</span>
@@ -60,4 +91,4 @@
 			是专注于婚礼创意策划、量身定做、礼仪服务的专业婚庆。幸福文化，为你我传递幸福，实现每对新人的婚礼梦想，为你我传递幸福全球领先的一站式婚礼服务专家,中国婚博会指定战略合作伙伴。
 		</span>
 	</div>
-</div>
+</div>-->

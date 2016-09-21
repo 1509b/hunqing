@@ -1,10 +1,34 @@
 
         <!--李雪松轮播图部分-->
 <div class="song-demo">
-	<ul>
-		<li><img src="../images/banner_1.jpg" /></li>
-		<li><img src="../images/banner_2.jpg" /></li>
-	</ul>
+	<!--<div ng-controller="CarouselDemoCtrl">-->
+  <div style="height: 305px">
+    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+      <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+        <img ng-src="{{slide.img}}" style="margin:auto;">
+        <div class="carousel-caption">
+          <h4>Slide {{slide.id}}</h4>
+          <p>{{slide.text}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <button type="button" class="btn btn-info" ng-click="addSlide()">Add Slide</button>
+      <button type="button" class="btn btn-info" ng-click="randomize()">Randomize slides</button>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="noWrapSlides">
+          Disable Slide Looping
+        </label>
+      </div>
+    </div>
+    <div class="col-md-6">
+      Interval, in milliseconds: <input type="number" class="form-control" ng-model="myInterval">
+      <br />Enter a negative number or 0 to stop the interval.
+    </div>
+  </div>
 </div>
 
 			<!--李雪松   content   第一部分-->
@@ -302,5 +326,41 @@
 </div>
 
 
+<<<<<<< HEAD
 
 <div class="null15"></div>
+=======
+<div class="song-lie">
+		<div class="song-lie-1" style="border-bottom: 1px solid white;">
+			<div class="song-lie-1-time">
+				<p>09/04</p>
+			</div>
+			<div class="song-lie-1-year">
+				<p>2016</p>
+			</div>
+			<div class="song-lie-1-title">
+				<a href="">珠三角地区最专业的婚庆策划公司</a>
+			</div>
+			<div class="song-lie-1-xiang">
+				<p>不同人的喜好和想要的风格是不一样的，所以各式各样的服装都是要有的，那去三亚</p>
+				<p>拍摄婚纱照要挑选...</p>
+			</div>
+		</div>
+		<div class="song-lie-2" style="border-bottom: 1px solid white;">
+			<div class="song-lie-1-time">
+				<p>08/21</p>
+			</div>
+			<div class="song-lie-1-year">
+				<p>2016</p>
+			</div>
+			<div class="song-lie-1-title">
+				<a href="">LOVE IN EVERY BREATH 仲夏欢乐颂</a>
+			</div>
+			<div class="song-lie-1-xiang">
+				<p>选择三亚婚纱摄影的时候一定要慎重，多对比几家，选择最好的。因为三亚是全国旅</p>
+				<p>游城市，因此受到很多...</p>
+			</div>
+		</div>
+</div>
+<div class="null15"></div>
+>>>>>>> origin/master
