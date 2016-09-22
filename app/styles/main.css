@@ -104,8 +104,6 @@ a{
 .song-lie1-1-date{width:100%;height:50px;}
 .song-lie1-1-date p{font-family: "仿宋";font-size:45px;line-height:50px;color:#666666;}
 .null15{width:100%;height:50px;}
-
-.tab_bg{ background: #ff6637; color: white;}
 .big_news{ width: 1180px; height: 800px; margin-left: 6%; margin-top: 150px;}
 .big_news ul li{ width: 590px; height: 205px; float: left;}
 .date{ width: 610px; height: 40px; font-size: 26px; color: #4a4a4a; font-family: "微软雅黑";}
@@ -113,6 +111,10 @@ a{
 .big_news ul li h1 a{ color: #161616; font-size: 20px; font-weight: 500; height: 40px; line-height: 30px; font-family: "微软雅黑";}
 .big_news ul li h1 a:hover{ color: #d7375a; cursor: pointer;}
 .big_news ul li p{ color: #808080; font-size: 12px; line-height: 24px; font-family: "微软雅黑"; width: 460px; height: 45px;}
-
 .song-lie a:hover{color:red;}
 
+.tab_bg{ background: #ff6637; color: white;}
+.big_tab{ width: 1170px; height: 690px; margin: 0 auto;}
+.tab_first,.tab_second,.tab_third{ width: 1170px; height: 690px; margin: 0 auto;}
+.tab_first ul li,.tab_second ul li,.tab_third ul li{ width: 390px; height: 345px; float: left;}
+.tab_first ul li h1,.tab_second ul li h1,.tab_third ul li h1{ font-size: 14px; height: 62px; line-height: 62px; color: #666666; text-align: center;}
