@@ -8,13 +8,39 @@
  * Controller of the yoApp
  */
 angular.module('yoApp')
-  .controller('main', function ($scope,$http) {
+  .controller('main', function ($scope,$http,$stateParams) {
 		$scope.swi=function(e){
 			$scope.tab=e;
 		}
-		$scope.addback=function(e){
-			$scope.i=e
+		$scope.isshow=true
+		$scope.aa=true
+		$scope.a=function(){
+			$scope.isshow=true
+			$scope.isshow1=false
+			$scope.isshow2=false
+			$scope.aa=true
+			$scope.bb=false
+			$scope.cc=false
+			
+		}		
+		$scope.b=function(){
+			$scope.isshow=false
+			$scope.isshow1=true
+			$scope.isshow2=false
+			$scope.aa=false
+			$scope.bb=true
+			$scope.cc=false
+		}		
+		$scope.c=function(){
+			$scope.isshow=false
+			$scope.isshow1=false
+			$scope.isshow2=true	
+			$scope.aa=false
+			$scope.bb=false
+			$scope.cc=true
 		}
+		
+		
 		
 		
 		$http({
@@ -47,6 +73,38 @@ angular.module('yoApp')
    				$(".song-div5-con-2-p2").css("color","#999797")
    			})
    		})
+		
+		$http({
+			url:"http://123.56.227.177:2504/wedding-tab",
+			method:"get",
+			params:{classify:0},
+			withCredentials:true 
+		}).success(function(x){
+			$scope.data1=x
+			console.log(x)
+		})
+		
+		$http({
+			url:"http://123.56.227.177:2504/wedding-tab",
+			method:"get",
+			params:{classify:1},
+			withCredentials:true 
+		}).success(function(y){
+			$scope.data2=y
+			console.log(y)
+		})
+		
+		$http({
+			url:"http://123.56.227.177:2504/wedding-tab",
+			method:"get",
+			params:{classify:2},
+			withCredentials:true 
+		}).success(function(z){
+			$scope.data3=z
+			console.log(z)
+		})
+		
+		
    		
 		$http({
 			url:"http://123.56.227.177:2504/wedding-autoplay",
@@ -74,6 +132,34 @@ angular.module('yoApp')
 		$scope.addSlide();
 }).filter("hq",function(){
   	return function(e){
+
+  $scope.myInterval = 5000;
+  $scope.noWrapSlides = false;
+  $scope.active = 0;
+  var slides = $scope.slides = [];
+  var currIndex = 0;
+
+  $scope.addSlide = function() {
+    var newWidth = 600 + slides.length + 1;
+    slides.push({
+      image: '//unsplash.it/' + newWidth + '/300',
+      text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
+      id: currIndex++
+    });
+  };
+
+  $scope.randomize = function() {
+    var indexes = generateIndexesArray();
+    assignNewIndexesToSlides(indexes);
+  };
+
+  for (var i = 0; i < 4; i++) {
+    $scope.addSlide();
+  }
+
+  }).filter("hq",function(){
+  	return function(e){
+//		alert(typeof(q))
   		if(e.length>280){
   			return e.substr(0,280)+'...'
   		}else{
