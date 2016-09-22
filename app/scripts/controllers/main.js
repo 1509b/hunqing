@@ -26,13 +26,7 @@ angular.module('yoApp')
 			console.log(e)
 		})
 		
-		$scope.details=function(e){
-			alert(e.id)
-		}
 		
-		
-
-
    		$(function(){
    			$(".song-div5-con-1").click(function(){
    				$(".song-div5-con-1").css("background","#ff6637").siblings().css("background","white")
@@ -59,33 +53,31 @@ angular.module('yoApp')
 			method:"get",
 			withCredentials:true
 		}).success(function(e){
-			console.log()
-			$scope.data=e
+			console.log(e)
+			$scope.da=e
 		})	
 			//http://123.56.227.177/bi2/public/wedding_upload/images/{{i.img}}
-
-
 		$scope.myInterval = 2000;
 		$scope.noWrapSlides = false;
 		var slides = $scope.slides = [];
 		$scope.addSlide = function() {
 			var newWidth = 600 + slides.length + 1;
 			slides.push({
-				img: 'img/11.jpg',
+				img: 'http://123.56.227.177/bi2/public/wedding_upload/images/a927899159dc3bc53440daa5e6376c9d.jpg',
 				//text: 'Chocola & Vanilla'
 			});
 			slides.push({
-				img: 'img/22.jpg',
-				//text: 'Chocola & Vanilla'
-			});
-			slides.push({
-				img: 'img/33.jpg',
-				//text: 'Chocola & Vanilla'
-			});
-			slides.push({
-				img: 'img/44.jpg',
+				img: 'http://123.56.227.177/bi2/public/wedding_upload/images/f80ac9886d550c571b7470ddf768e59f.jpg',
 				//text: 'Chocola & Vanilla'
 			});
 		};
 		$scope.addSlide();
+}).filter("hq",function(){
+  	return function(e){
+  		if(e.length>280){
+  			return e.substr(0,280)+'...'
+  		}else{
+  			return e
+  		}
+  	}
 })
