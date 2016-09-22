@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-    .module('yoApp', ['ui.router']).config(function($stateProvider,$urlRouterProvider){
+    .module('yoApp', ['ui.router','ngSanitize']).config(function($stateProvider,$urlRouterProvider){
     	$urlRouterProvider.when("","/main")
   	    $stateProvider.state("main",{
 	  		url:"/main",
@@ -35,6 +35,10 @@ angular
 	  		url:"/team",
 	  		templateUrl:'../views/team.html',
 	  		controller:"team"
+	  	}).state("details",{
+	  		url:"/details?id",
+	  		templateUrl:'../views/details.html',
+	  		controller:"details"
 	  	})
 	  	
 	  	$('.nav,.fix').find('ul>li').click(function(){

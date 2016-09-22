@@ -1,0 +1,12 @@
+body{margin:0;padding:0;font-family:"微软雅黑";}
+*{margin:0px;padding:0px}
+ol,ul,li,p,img,h1,h2,h3,h4,h5,h6,font{display:block;}
+ol,ul,li{list-style:none;}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+
+.read{ width: 1160px; height: 1200px; margin: 0 auto;}
+.read h1{ font-size: 24px; color: #161616; text-align: center; height: 110px; line-height: 110px; margin-top: 10px; font-weight: 500; border-bottom: 1px dashed #cccccc; font-weight: bold;}
+.read_details{ width: 1160px; height: 990px; font-size: 12px; line-height: 26px; margin-top: 10px; color: #333;}
+.return{ width: 70px; height: 28px; border: 1px solid #ccc; margin: 0 auto; text-align: center; line-height: 28px; color: #666;}
+.return a{ color: #666;}

@@ -1,10 +1,34 @@
 
         <!--李雪松轮播图部分-->
 <div class="song-demo">
-	<ul>
-		<li><img src="../images/banner_1.jpg" /></li>
-		<li><img src="../images/banner_2.jpg" /></li>
-	</ul>
+	<!--<div ng-controller="CarouselDemoCtrl">-->
+  <div style="height: 305px">
+    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+      <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+        <img ng-src="{{slide.img}}" style="margin:auto;">
+        <div class="carousel-caption">
+          <h4>Slide {{slide.id}}</h4>
+          <p>{{slide.text}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <button type="button" class="btn btn-info" ng-click="addSlide()">Add Slide</button>
+      <button type="button" class="btn btn-info" ng-click="randomize()">Randomize slides</button>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="noWrapSlides">
+          Disable Slide Looping
+        </label>
+      </div>
+    </div>
+    <div class="col-md-6">
+      Interval, in milliseconds: <input type="number" class="form-control" ng-model="myInterval">
+      <br />Enter a negative number or 0 to stop the interval.
+    </div>
+  </div>
 </div>
 
 			<!--李雪松   content   第一部分-->
@@ -65,24 +89,24 @@
 <div class="null5"></div>
 <div class="song-div5">
 			<div class="song-div5-con">
-					<div class="song-div5-con-1" style="background:#ff6637;">
-						<p class="song-div5-con-1-p1" style="color:white;">定制婚礼</p>
+					<div class="song-div5-con-1" style="color: white; background: #ff6637;">
+						<p class="song-div5-con-1-p1" ng-click="swi('j1')">定制婚礼</p>
 					</div>
 					<div class="song-div5-con-2">
-						<p class="song-div5-con-2-p2">户外婚礼</p>
+						<p class="song-div5-con-2-p2" ng-click="swi('j2')">户外婚礼</p>
 					</div>
 					<div class="song-div5-con-3">
-						<p class="song-div5-con-3-p3">海外婚礼</p>
+						<p class="song-div5-con-3-p3" ng-click="swi('j3')">海外婚礼</p>
 					</div>
 			</div>
 </div>
 <div class="null8"></div>
 
 				<!--李雪松   选项卡部分-->
-<div class="song-div6">
+<div class="song-div6" ng-switch="tab">
 	
 										<!--	第一张选项卡-->
-	<div class="song-div6-con1">
+	<div class="song-div6-con1"  ng-switch-default>
 		<div class="song-div6-yi">
 				<div class="song-div6-yi-1">
 						<div class="song-div6-img">
@@ -138,7 +162,7 @@
 	</div>
 	
 												<!--第二张选项卡-->
-	<div class="song-div6-con2" style="display: none;">
+	<div class="song-div6-con2" ng-switch-when="j2">
 		<div class="song-div6-yi">
 				<div class="song-div6-yi-1">
 						<div class="song-div6-img">
@@ -194,7 +218,7 @@
 	</div>
 	
 											<!--第三张选项卡-->
-	<div class="song-div6-con3" style="display: none;">
+	<div class="song-div6-con3" ng-switch-when="j3">
 		<div class="song-div6-yi">
 				<div class="song-div6-yi-1">
 						<div class="song-div6-img">
@@ -248,42 +272,14 @@
 				</div>
 		</div>
 	</div>
-</div>
-<div class="null9"></div>
-<div class="song-div7">
-		<p>"流光溢彩安然如斯,勇敢诠释爱"</p>
-</div>
-<div class="song-div8">
-		<p></p>
-</div>
-<div class="song-div9">
-			<p>定制您婚礼中的幸福感！在婚礼当天，我们不仅仅记录的是婚礼本身，还有一场婚礼的气质！</p>
-</div>
-<div class="song-div10">
-			<p>EFFORTS TO CREATE A HIGH-END WEDDING PHOTOGRAPHY BRAND,PURSUE ONLY BELONGS</p>
-</div>
-<div class="song-div11">
-			<p>TO YOUR WEDDING DREAM!</p>
-</div>
-<div class="song-div12">
-			<p></p>
+	
+   
+	
 </div>
 
-<div class="null11"></div>
-<div class="song-div13">
-		<div class="song-div13-left">
-					<div class="null12"></div>
-					<img src="../images/song9.jpg" alt="" />
-		</div>
-		<div class="song-div13-con">
-			<img src="../images/song8.jpg" alt="" />
-		</div>
-	<div class="song-div13-right">
-					<div class="null12"></div>
-					<img src="../images/song10.jpg" alt="" />
-		</div>
-</div>
+										<!--李雪松    新闻列表部分	-->	
 
+<<<<<<< HEAD
 <div class="null13"></div>
 										<!--李雪松    新闻列表部分	-->		
 <div class="song-lie1">
@@ -294,3 +290,15 @@
 		</div>
 		<div class="song-lie1-2"></div>
 </div>
+=======
+<div class="big_news">
+	<ul ng-repeat="i in data">
+		<li>
+			<span class="date">{{i.date}}</span>
+			<h1><a ui-sref="details({id:i.id})">{{i.title}}</a></h1>
+			<p ng-bind-html="i.content | hq"></p>
+		</li>
+	</ul>
+</div>
+
+>>>>>>> origin/master
