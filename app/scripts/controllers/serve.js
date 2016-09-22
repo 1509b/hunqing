@@ -9,24 +9,16 @@
  */
 angular.module('yoApp')
   .controller('serve', function () {
-    $(function(){
-        $('#btn').onclick=function(){
-            if(mv.paused){
-                mv.play();
-            }else{
-                mv.pause();
-            }
-        }
-        $(".l-content2").hover(function(){
+        $scope.mouseenter=function(){
             $(".l-content2 span").addClass('hover');
-        },function(){
+        }
+        $scope.mouseleave=function(){
             $(".l-content2 span").removeClass('hover');
-        })
-        $(".l-content4-right").hover(function(){
+        }
+        $scope.mouseenter1=function(){
             $(".l-content4-right span").addClass('hover');
-        },function(){
+        }
+        $scope.mouseleave1=function(){
             $(".l-content4-right span").removeClass('hover');
-        })
-    })
-
-    });
+        }
+  });

@@ -11,7 +11,7 @@
     </div>
 </div>
 <div class="l-about-content2">
-    <span></span>
+    <span ng-mouseenter="mouseenter()" ng-mouseleave="mouseleave()"></span>
 </div>
 <div class="l-about-content3">
     <h1>只为你的美丽一刻</h1>
@@ -23,8 +23,8 @@
 <div class="l-about-content4">
     <!--<img src="../images/l-about-left.png"/>-->
     <!--<img src="../images/l-about-right.png"/>-->
-    <span class="span1"><a></a></span>
-    <span class="span2"><a></a></span>
+    <span class="span1" ng-mouseenter="mouseenter1()" ng-mouseleave="mouseleave1()"><a></a></span>
+    <span class="span2" ng-mouseenter="mouseenter2()" ng-mouseleave="mouseleave2()"><a></a></span>
 </div>
 <div class="l-about-content5">
     <div class="l-content5-left">
@@ -39,13 +39,13 @@
     </div>
     <div class="l-content5-right">
         <span>姓名：</span>
-        <input type="text" class="name"/><s>*</s><br/>
+        <input type="text" class="name"/><b>*</b><br/>
         <span>联系方式：</span>
-        <input type="text" class="tel"/><s>*</s><br/>
+        <input type="text" class="tel" ng-click="telclick()" ng-blur="telblur()"/><b>*</b><br/>
         <span>邮箱：</span>
-        <input type="text" class="mail"/><s>*</s><br/>
+        <input type="text" class="mail" ng-click="mailclick()" ng-blur="mailblur()"/><b>*</b><br/>
         <span>策划需求：</span>
-        <textarea cols="69" rows="6"></textarea><br/>
-        <button>提交</button>
+        <textarea cols="52" rows="6"></textarea><br/>
+        <button ng-click="sub()">提交</button>
     </div>
 </div>
