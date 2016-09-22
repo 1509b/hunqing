@@ -39,10 +39,7 @@ angular.module('yoApp')
 			$scope.bb=false
 			$scope.cc=true
 		}
-		
-		
-		
-		
+
 		$http({
 			url:"http://123.56.227.177:2504/wedding-news",
 			method:"get",
@@ -51,28 +48,6 @@ angular.module('yoApp')
 			$scope.data=e
 			console.log(e)
 		})
-		
-		
-   		$(function(){
-   			$(".song-div5-con-1").click(function(){
-   				$(".song-div5-con-1").css("background","#ff6637").siblings().css("background","white")
-   				$(".song-div5-con-1-p1").css("color","white")
-   				$(".song-div5-con-2-p2").css("color","#999797")
-   				$(".song-div5-con-3-p3").css("color","#999797")
-   			})
-   			$(".song-div5-con-2").click(function(){
-   				$(".song-div5-con-2").css("background","#ff6637").siblings().css("background","white")
-   				$(".song-div5-con-2-p2").css("color","white")
-   					$(".song-div5-con-1-p1").css("color","#999797")
-   				$(".song-div5-con-3-p3").css("color","#999797")
-   			})
-   			$(".song-div5-con-3").click(function(){
-   				$(".song-div5-con-3").css("background","#ff6637").siblings().css("background","white")
-   				$(".song-div5-con-3-p3").css("color","white")
-   					$(".song-div5-con-1-p1").css("color","#999797")
-   				$(".song-div5-con-2-p2").css("color","#999797")
-   			})
-   		})
 		
 		$http({
 			url:"http://123.56.227.177:2504/wedding-tab",
@@ -104,8 +79,6 @@ angular.module('yoApp')
 			console.log(z)
 		})
 		
-		
-   		
 		$http({
 			url:"http://123.56.227.177:2504/wedding-autoplay",
 			method:"get",
@@ -130,32 +103,6 @@ angular.module('yoApp')
 			});
 		};
 		$scope.addSlide();
-}).filter("hq",function(){
-  	return function(e){
-
-  $scope.myInterval = 5000;
-  $scope.noWrapSlides = false;
-  $scope.active = 0;
-  var slides = $scope.slides = [];
-  var currIndex = 0;
-
-  $scope.addSlide = function() {
-    var newWidth = 600 + slides.length + 1;
-    slides.push({
-      image: '//unsplash.it/' + newWidth + '/300',
-      text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
-      id: currIndex++
-    });
-  };
-
-  $scope.randomize = function() {
-    var indexes = generateIndexesArray();
-    assignNewIndexesToSlides(indexes);
-  };
-
-  for (var i = 0; i < 4; i++) {
-    $scope.addSlide();
-  }
 
   }).filter("hq",function(){
   	return function(e){
