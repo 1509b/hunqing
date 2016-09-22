@@ -89,195 +89,48 @@
 <div class="null5"></div>
 <div class="song-div5">
 			<div class="song-div5-con">
-					<div class="song-div5-con-1" style="color: white; background: #ff6637;">
-						<p class="song-div5-con-1-p1" ng-click="swi('j1')">定制婚礼</p>
+					<div class="song-div5-con-1">
+						<p class="song-div5-con-1-p1" ng-click="a(aa)" ng-class={tab_bg:aa}>定制婚礼</p>
 					</div>
 					<div class="song-div5-con-2">
-						<p class="song-div5-con-2-p2" ng-click="swi('j2')">户外婚礼</p>
+						<p class="song-div5-con-2-p2" ng-click="b(bb)" ng-class={tab_bg:bb}>户外婚礼</p>
 					</div>
 					<div class="song-div5-con-3">
-						<p class="song-div5-con-3-p3" ng-click="swi('j3')">海外婚礼</p>
+						<p class="song-div5-con-3-p3" ng-click="c(cc)" ng-class={tab_bg:cc}>海外婚礼</p>
 					</div>
 			</div>
 </div>
 <div class="null8"></div>
 
 				<!--李雪松   选项卡部分-->
-<div class="song-div6" ng-switch="tab">
-	
-										<!--	第一张选项卡-->
-	<div class="song-div6-con1"  ng-switch-default>
-		<div class="song-div6-yi">
-				<div class="song-div6-yi-1">
-						<div class="song-div6-img">
-							<img src="../images/dz_1.png" alt="" />
-						</div>
-						<div class="song-div6-shuoming">
-							<p>G&Z 森林风格</p>
-						</div>
-				</div>
-				<div class="song-div6-yi-2">
-					<div class="song-div6-img">
-							<img src="../images/dz_2.png" alt="" />
-						</div>
-						<div class="song-div6-shuoming">
-							<p>F&R 地中海风格</p>
-						</div>
-				</div>
-				<div class="song-div6-yi-3">
-					<div class="song-div6-img">
-							<img src="../images/dz_3.png" alt="" />
-						</div>
-						<div class="song-div6-shuoming">
-							<p>B&M 复古格调风格</p>
-						</div>
-				</div>
-		</div>
-		<div class="song-div6-er">
-				<div class="song-div6-er-1">
-					<div class="song-div6-img">
-							<img src="../images/dz_4.png" alt="" />
-						</div>
-						<div class="song-div6-shuoming">
-							<p>T&J 时尚中式风格</p>
-						</div>
-				</div>
-				<div class="song-div6-er-2">
-					<div class="song-div6-img">
-							<img src="../images/dz_5.png" alt="" />
-						</div>
-						<div class="song-div6-shuoming">
-							<p>V&K 彩绘玻璃教堂风格</p>
-						</div>
-				</div>
-				<div class="song-div6-er-3">
-					<div class="song-div6-img">
-							<img src="../images/dz_6.png" alt="" />
-						</div>
-						<div class="song-div6-shuoming">
-							<p>G&O 香奈儿风格</p>
-						</div>
-				</div>
-		</div>
+<div class="big_tab" ng-switch="tab">
+	<div class="tab_first" ng-show="isshow">
+		<ul>
+			<li ng-repeat="x in data1"><img src="http://123.56.227.177/bi2/public/wedding_upload/images/{{x.img}}">
+			<h1>{{x.title}}</h1>
+</li>
+</li>
+		</ul>
 	</div>
-	
-												<!--第二张选项卡-->
-	<div class="song-div6-con2" ng-switch-when="j2">
-		<div class="song-div6-yi">
-				<div class="song-div6-yi-1">
-						<div class="song-div6-img">
-							<img src="../images/huw_1.png" alt="" />
-						</div>
-						<div class="song-div6-shuoming">
-							<p>G&Z 古镇主题</p>
-						</div>
-				</div>
-				<div class="song-div6-yi-2">
-					<div class="song-div6-img">
-								<img src="../images/huw_2.png" alt="" />
-						</div>
-						<div class="song-div6-shuoming">
-							<p>F&R 鲜花主题1</p>
-						</div>
-				</div>
-				<div class="song-div6-yi-3">
-					<div class="song-div6-img">
-								<img src="../images/huw_3.png" alt="" />
-						</div>
-						<div class="song-div6-shuoming">
-							<p>B&M 森林主题</p>
-						</div>
-				</div>
-		</div>
-		<div class="song-div6-er">
-				<div class="song-div6-er-1">
-					<div class="song-div6-img">
-								<img src="../images/huw_4.png" alt="" />
-						</div>
-						<div class="song-div6-shuoming">
-							<p>T&J 鲜花主题2</p>
-						</div>
-				</div>
-				<div class="song-div6-er-2">
-					<div class="song-div6-img">
-								<img src="../images/huw_5.png" alt="" />
-						</div>
-						<div class="song-div6-shuoming">
-							<p>V&K 森林主题2</p>
-						</div>
-				</div>
-				<div class="song-div6-er-3">
-					<div class="song-div6-img">
-								<img src="../images/huw_6.png" alt="" />
-						</div>
-						<div class="song-div6-shuoming">
-							<p>G&O 鲜花主题3</p>
-						</div>
-				</div>
-		</div>
+	<div class="tab_second" ng-show="isshow1">
+		<ul>
+			<li ng-repeat="y in data2"><img src="http://123.56.227.177/bi2/public/wedding_upload/images/{{y.img}}">
+			<h1>{{y.title}}</h1>
+		</ul>
 	</div>
-	
-											<!--第三张选项卡-->
-	<div class="song-div6-con3" ng-switch-when="j3">
-		<div class="song-div6-yi">
-				<div class="song-div6-yi-1">
-						<div class="song-div6-img">
-							<img src="../images/hai_1.png" alt="" />
-						</div>
-						<div class="song-div6-shuoming">
-							<p>G&Z 威斯汀沙滩</p>
-						</div>
-				</div>
-				<div class="song-div6-yi-2">
-					<div class="song-div6-img">
-								<img src="../images/hai_2.png" alt="" />
-						</div>
-						<div class="song-div6-shuoming">
-							<p>F&R 塞班海上游艇</p>
-						</div>
-				</div>
-				<div class="song-div6-yi-3">
-					<div class="song-div6-img">
-								<img src="../images/hai_3.png" alt="" />
-						</div>
-						<div class="song-div6-shuoming">
-							<p>B&M 海外水上教堂</p>
-						</div>
-				</div>
-		</div>
-		<div class="song-div6-er">
-				<div class="song-div6-er-1">
-					<div class="song-div6-img">
-								<img src="../images/hai_4.png" alt="" />
-						</div>
-						<div class="song-div6-shuoming">
-							<p>T&J 巴厘岛沙滩</p>
-						</div>
-				</div>
-				<div class="song-div6-er-2">
-					<div class="song-div6-img">
-							<img src="../images/hai_5.png" alt="" />
-						</div>
-						<div class="song-div6-shuoming">
-							<p>V&K 关岛</p>
-						</div>
-				</div>
-				<div class="song-div6-er-3">
-					<div class="song-div6-img">
-								<img src="../images/hai_6.png" alt="" />
-						</div>
-						<div class="song-div6-shuoming">
-							<p>G&O 爱琴海</p>
-						</div>
-				</div>
-		</div>
+	<div class="tab_third" ng-show="isshow2">
+		<ul>
+			<li ng-repeat="z in data3"><img src="http://123.56.227.177/bi2/public/wedding_upload/images/{{z.img}}">
+			<h1>{{z.title}}</h1>
+</li>
+		</ul>
 	</div>
-	
-   
-	
 </div>
 
-										<!--李雪松    新闻列表部分	-->	
+
+
+
+				<!--李雪松    新闻列表部分	-->	
 
 <div class="big_news">
 	<ul ng-repeat="i in data">
