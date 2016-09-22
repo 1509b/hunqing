@@ -27,10 +27,11 @@ body,ul,p,h1,h2,h3,span{margin: 0;padding: 0;font-family: "微软雅黑";}
 .span1{display:block;width: 432px;height: 201px;background: url("../images/l-about-left.png");
     z-index:2;position: relative;float: left;}
 .span1 a.hover{
-    -webkit-transform:rotateY(90deg);
-    -moz-transform:rotateY(90deg);
-    -o-transform:rotateY(90deg);
-    -ms-transform:rotateY(90deg);
+    -webkit-transform:rotate3d(1,1,0.9,-200deg) scale(0);
+    -ms-transform:rotate3d(1,1,0.9,-200deg) scale(0);
+    -o-transform:rotate3d(1,1,0.9,-200deg) scale(0);
+    -moz-transform:rotate3d(1,1,0.9,-200deg) scale(0);
+    transform:rotate3d(1,1,0.9,-200deg) scale(0);
 }
 .span2 a{display: block;width: 359px;background:rgba(0,0,0,0.2);height: 202px;float: left;transition:all 1s;
     position: absolute;z-index: 1;}
