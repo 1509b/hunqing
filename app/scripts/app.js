@@ -35,6 +35,10 @@ angular
 	  		url:"/team",
 	  		templateUrl:'../views/team.html',
 	  		controller:"team"
+	  	}).state("details",{
+	  		url:"/details?id",
+	  		templateUrl:'../views/details.html',
+	  		controller:"details"
 	  	})
 	  	
 	  	$('.nav,.fix').find('ul>li').click(function(){

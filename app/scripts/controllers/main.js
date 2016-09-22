@@ -9,7 +9,6 @@
  */
 angular.module('yoApp')
   .controller('main', function ($scope,$http) {
-<<<<<<< HEAD
 		$scope.swi=function(e){
 			$scope.tab=e;
 		}
@@ -27,11 +26,13 @@ angular.module('yoApp')
 			console.log(e)
 		})
 		
+		$scope.details=function(e){
+			alert(e.id)
+		}
+		
 		
 
-=======
-  	
->>>>>>> origin/master
+
    		$(function(){
    			$(".song-div5-con-1").click(function(){
    				$(".song-div5-con-1").css("background","#ff6637").siblings().css("background","white")
@@ -53,7 +54,6 @@ angular.module('yoApp')
    			})
    		})
    		
-<<<<<<< HEAD
 		$http({
 			url:"http://123.56.227.177:2504/wedding-autoplay",
 			method:"get",
@@ -122,16 +122,15 @@ angular.module('yoApp')
 
 	
 
-=======
->>>>>>> origin/master
+
    		
 
   }).filter("hq",function(){
-  	return function(e){
-  		if(e.length>280){
-  			return e.substr(0,280)+'...'
+  	return function(q){
+  		if(q.length>280){
+  			return q.substr(0,280)+'...'
   		}else{
-  			return e
+  			return q
   		}
   	}
   })
