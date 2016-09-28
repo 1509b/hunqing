@@ -6,13 +6,17 @@ a{text-decoration:none;}
 a:hover{text-decoration:none;}
 
 .logo{width:100%;height:110px;background:#fff;}
-.logo-line{width: 1000px;height: 110px;margin: auto;}
-.logo-left,.logo-right{width:300px;height: 84px;float: left;margin-top: 26px; cursor: pointer;}
-.logo-right{margin-left: 400px;}
-.logo-left img{display:block;float: left;width: 80px;height: auto;}
-.logo-left img:hover{transition:1s;transform:scale(1.2);}
-.logo-left span{display: block;width: auto;height: auto;color:#ec287e;font-weight: bold;font-size: 40px;
-    font-family: Menlo;}
+.logo-line{width: 1100px;height: 110px;margin: auto;}
+.logo-left,.logo-right{height: 84px;float: left;margin-top: 26px; cursor: pointer;}
+.logo-right{width: 200px;}
+.logo-left{width: 600px;}
+.logo-right{margin-left: 242px;}
+.logo-left img:nth-child(1){display:block;float: left;width: 80px;height: auto;}
+.logo-left img:nth-child(1):hover{transition:1s;transform:scale(1.2);}
+.logo-left img:nth-child(2){display:block;float: left;width: auto;height: auto;margin-left: 8px;margin-top: 6px;}
+
+/*.logo-left span{display: block;width:auto;height: auto;color:#ec287e;font-weight: bold;font-size: 40px;*/
+    /*font-family: Menlo;}*/
 .logo-right span:nth-child(1){font-size: 18px;display: block;width: 240px;height: 20px;float: left;}
 .logo-right span:nth-child(2){font-size: 25px;display: block;width: 240px;height: 30px;float: left;color: #ec287e;}
 
@@ -31,12 +35,13 @@ a:hover{text-decoration:none;}
 .box{width:100%;height:auto;}
 
 .footer{width:100%;height:170px;background:#1c2f67;}
-.foot-line{width: 1000px;height: 140px;margin:auto;padding-top:30px;text-align: left;line-height: 30px;
+.foot-line{width: 1100px;height: 150px;margin:auto;padding-top:30px;text-align: left;line-height: 30px;
     font-size:15px; }
 .foot-line a{color: #ccc;}
 .foot-line a:hover{color: #ccc;text-decoration: underline;}
-.f1,.f2,.f3{height: 140px;float: left;}
-.f1,.f3{width:200px;}
+.f1,.f2,.f3{height: 120px;float: left;}
+.f2{margin-left: 100px;}
+.f1,.f3{width:130px;border-right: 1px solid #999; margin-left: 50px;}
 .f1 a:hover,.f3 a:hover{text-decoration: underline;}
 .fix{ width:100%; height:50px; background:#1c2f67; position:fixed; top:0; display:none; z-index: 99; box-shadow:0px 1px 5px #000; opacity: 0.9;}
 .back{ width:40px; height:40px; position:fixed; right:20px; bottom:20px; display:none; background:url(../images/foot_back.png); cursor: pointer; opacity: 0.9;}

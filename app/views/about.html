@@ -1,5 +1,9 @@
-<div class="l-about-banner">
-    <img src="../images/l-about-banner.png"/>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="angular.min.js"></script>
 </div>
 <div class="l-about-content">
     <div class="l-about-main">
@@ -39,13 +43,14 @@
     </div>
     <div class="l-content5-right">
         <span>姓名：</span>
-        <input type="text" class="name"/><b>*</b><br/>
+        <input type="text" class="name" ng-model="updata.name"/><b>*</b><br/>
         <span>联系方式：</span>
-        <input type="text" class="tel" ng-click="telclick()" ng-blur="telblur()"/><b>*</b><br/>
+        <input type="text" class="tel" ng-click="telclick()" ng-blur="telblur()" ng-model="updata.tel"/><b>*</b><br/>
         <span>邮箱：</span>
-        <input type="text" class="mail" ng-click="mailclick()" ng-blur="mailblur()"/><b>*</b><br/>
+        <input type="text" class="mail" ng-click="mailclick()" ng-blur="mailblur()" ng-model="updata.email"/><b>*</b><br/>
         <span>策划需求：</span>
-        <textarea cols="52" rows="6"></textarea><br/>
+        <textarea cols="52" rows="6" class="request" ng-model="updata.request"></textarea><br/>
         <button ng-click="sub()">提交</button>
+        <button ng-click="reset()" class="reset">清空</button>
     </div>
 </div>

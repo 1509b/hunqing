@@ -9,9 +9,6 @@
  */
 angular.module('yoApp')
 	.controller('main', function ($scope,$http,$stateParams) {
-		$scope.swi=function(e){
-			$scope.tab=e;
-		}
 		$scope.isshow=true
 		$scope.aa=true
 		$scope.a=function(){
@@ -103,7 +100,6 @@ angular.module('yoApp')
 			});
 		};
 		$scope.addSlide();
-
 	}).filter("hq",function(){
 		return function(e){
 //		alert(typeof(q))

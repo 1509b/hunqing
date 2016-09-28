@@ -11,7 +11,7 @@ body,ul,p,h1,h2,h3,span{margin: 0;padding: 0;font-family: "微软雅黑";}
 .l-about-content2{width: 552px;height: 306px;margin: auto;cursor: pointer;z-index: 1;
     background: url("../images/l-about-banner2.png");position: relative;}
 .l-about-content2 span{display: block;width: 552px;height: 306px;background:rgba(0,0,0,0.1); z-index:2;
-    transition:all 1s;position: absolute;}
+    position: absolute;transition:all 1s;}
 .l-about-content2 span.hover{
     -webkit-transform:rotateY(90deg);
     -moz-transform:rotateY(90deg);
@@ -27,17 +27,15 @@ body,ul,p,h1,h2,h3,span{margin: 0;padding: 0;font-family: "微软雅黑";}
 .span1{display:block;width: 432px;height: 201px;background: url("../images/l-about-left.png");
     z-index:2;position: relative;float: left;}
 .span1 a.hover{
-    -webkit-transform:rotate3d(1,1,0.9,-200deg) scale(0);
-    -ms-transform:rotate3d(1,1,0.9,-200deg) scale(0);
-    -o-transform:rotate3d(1,1,0.9,-200deg) scale(0);
-    -moz-transform:rotate3d(1,1,0.9,-200deg) scale(0);
-    transform:rotate3d(1,1,0.9,-200deg) scale(0);
+    -webkit-transform:rotateY(90deg);
+    -moz-transform:rotateY(90deg);
+    -o-transform:rotateY(90deg);
+    -ms-transform:rotateY(90deg);
 }
 .span2 a{display: block;width: 359px;background:rgba(0,0,0,0.2);height: 202px;float: left;transition:all 1s;
     position: absolute;z-index: 1;}
 .span2{display:block;width: 359px;height: 202px;background: url("../images/l-about-right.png");
-    z-index:2;position: relative;float: left;margin-left: 25px;
-  cursor: pointer;}
+    z-index:2;position: relative;float: left;margin-left: 25px;cursor: pointer;}
 .span2 a.hover{
     -webkit-transform:rotateX(90deg);
     -moz-transform:rotateX(90deg);
@@ -51,11 +49,12 @@ body,ul,p,h1,h2,h3,span{margin: 0;padding: 0;font-family: "微软雅黑";}
 .l-content5-left h1{color: #fff;margin: 90px 0 0 60px;font-size: 30px;}
 .l-content5-left span{font-size: 18px;color: #999;line-height: 20px;margin-left: 60px; margin-top: 5px;}
 .l-content5-left p{margin: 100px 0 0 60px;line-height: 35px;color: #999;font-size: 15px;}
-.l-content5-right b{color:red;margin-left: 5px;line-height: 35px;letter-spacing: 0.2em;}
+.l-content5-right b{color:red;margin-left: 10px;line-height: 35px;font-size: 15px;}
 .l-content5-right span:nth-child(1){font-size: 12px;color: #999;margin: 90px 0 0 120px;line-height: 30px;}
 .l-content5-right span{margin-left: 120px;font-size: 12px;color: #999;line-height: 30px;}
 .l-content5-right input{width: 435px;height: 35px;line-height:35px;margin-left: 120px;border-radius: 10px;
-    font-size: 18px;font-weight:bold;}
+    font-size: 18px;color: #666;padding-left: 8px;}
 .l-content5-right textarea{border-radius: 10px;margin-left: 120px;font-size: 14px;font-weight:bold;}
-.l-content5-right button{display: block;width: 150px;height: 45px;background: #f54f4f;border-radius: 5px;
-    text-align: center;line-height: 45px;color: #fff;margin-left: 120px;border: 0;margin-top: 35px;}
+.l-content5-right button{display: block;width: 100px;height: 45px;background: #f54f4f;border-radius: 5px;
+    text-align: center;line-height: 45px;color: #fff;margin-left: 150px;border: 0;margin-top: 35px;float: left;}
+

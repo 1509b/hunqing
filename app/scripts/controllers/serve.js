@@ -8,7 +8,7 @@
  * Controller of the yoApp
  */
 angular.module('yoApp')
-  .controller('serve', function () {
+  .controller('serve', function ($scope) {
         $scope.mouseenter=function(){
             $(".l-content2 span").addClass('hover');
         }
